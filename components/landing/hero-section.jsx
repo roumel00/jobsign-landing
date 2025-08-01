@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 export default function HeroSection() {
+  const webappUrl = process.env.NEXT_PUBLIC_WEBAPP_URL;
+
   return (
     <section className="relative overflow-hidden">
       <div className="container mx-auto px-4 py-16 sm:py-24 lg:py-32">
@@ -22,12 +24,14 @@ export default function HeroSection() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-                Start Free Trial
-              </Button>
+              <a href={`${webappUrl}/auth/signup`} target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                >
+                  Start Free Trial
+                </Button>
+              </a>
               <Button 
                 variant="outline" 
                 size="lg" 
