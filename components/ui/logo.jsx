@@ -41,7 +41,7 @@ export default function Logo({
     <div className={`flex items-center space-x-2 ${className}`}>
       <div className={`${sizeClasses[size]} flex-shrink-0`}>
         <Image
-          src="/jobsign_logo.svg"
+          src="/jobsign-logo.svg"
           alt="JobSign Logo"
           width={64}
           height={64}

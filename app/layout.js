@@ -11,11 +11,11 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: '/jobsign_logo.svg',
+        url: '/jobsign-logo.svg',
         type: 'image/svg+xml',
       }
     ],
-    apple: '/jobsign_logo.svg',
+    apple: '/jobsign-logo.svg',
   },
 };
 
@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/jobsign_logo.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/jobsign_logo.svg" />
+        <link rel="icon" href="/jobsign-logo.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/jobsign-logo.svg" />
       </head>
       <body className={inter.className}>
         <Providers>{children}</Providers>
