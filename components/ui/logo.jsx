@@ -6,9 +6,9 @@ export default function Logo({
 }) {
   const sizeClasses = {
     sm: 'w-6 h-6',
-    default: 'w-8 h-8',
+    default: 'w-24 h-15',
     lg: 'w-32 h-22',
-    xl: 'w-16 h-16'
+    xl: 'w-48 h-33'
   };
 
   return (
